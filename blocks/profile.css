@@ -34,7 +34,7 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 627) {
+@media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
     max-width: 288px;
@@ -43,7 +43,7 @@
     padding-top: 20px;
   }
 
-  .profile.avatr {
+  .profile__avatar {
     margin: 0 0 12px;
     height: 80px;
     width: 80px;
