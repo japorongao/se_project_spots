@@ -1,4 +1,6 @@
 .profile {
+  width: 1280px;
+  height: 190px;
   display: flex;
   padding: 34px 0 20px;
   border-bottom: 1px rgb(33, 33, 33, 0.4) solid;
@@ -21,7 +23,6 @@
   font-size: 32px;
   line-height: 1;
   display: -webkit-box;
-  overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -44,6 +45,13 @@
   margin-top: auto;
   border: none;
   background-color: inherit;
+  margin-left: 0;
+  margin-right: 312px;
+}
+
+.profile__edit-btn img {
+  position: relative;
+  padding-right: 4px;
 }
 
 .profile__add-btn {
@@ -62,6 +70,11 @@
   background: black;
   color: #fff;
   overflow: hidden;
+}
+
+.profile__add-btn img {
+  position: relative;
+  padding-right: 4px;
 }
 
 .profile__add-btn:hover {
