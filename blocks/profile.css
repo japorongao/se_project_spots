@@ -1,5 +1,5 @@
 .profile {
-  width: 1280px;
+  max-width: 1280px;
   height: 190px;
   display: flex;
   justify-content: space-between;
@@ -88,14 +88,13 @@
   .profile {
     flex-direction: column;
     max-width: 288px;
-    height: 274px;
     align-items: center;
     text-align: center;
     padding-top: 20px;
   }
 
   .profile__avatar {
-    margin-bottom: 12px;
+    margin: 0 0 12px;
     height: 80px;
     width: 80px;
   }
