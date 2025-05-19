@@ -7,7 +7,7 @@
 * Images  
   
 **Intro**
-This project comprises of nummerous elements that correctly displays on desktop and mobile screen sizes.  It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates.  It also allows users to interact with the site via interactive buttons.  It was created utilizing numerical values acquired from Figma templates.
+This project comprises of numerous elements that correctly displays on desktop and mobile screen sizes.  It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates.  It also allows users to interact with the site via interactive buttons.  It was created utilizing numerical values acquired from Figma templates.
   
 **Figma**  
   
