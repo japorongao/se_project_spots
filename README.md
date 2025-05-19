@@ -17,7 +17,7 @@ This project comprises of numerous elements that correctly displays on desktop a
 - Interactive Buttons
 
   **Deployment**
-  - https://japorongao.github.io/se_project_spots
+  - [Deployment Link](https://japorongao.github.io/se_project_spots)
 
 **Figma**  
   
