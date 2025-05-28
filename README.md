@@ -7,8 +7,18 @@
 * Images  
   
 **Intro**
-This project comprises of nummerous elements that correctly displays on desktop and mobile screen sizes.  It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates.  It also allows users to interact with the site via interactive buttons.  It was created utilizing numerical values acquired from Figma templates.
-  
+This project comprises of numerous elements that correctly displays on desktop and mobile screen sizes.  It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates.  It also allows users to interact with the site via interactive buttons.  It was created utilizing numerical values acquired from Figma templates.
+
+**Tech Stack**
+
+- HTML
+- CSS
+- Responsive Design
+- Interactive Buttons
+
+  **Deployment**
+  - [Deployment Link](https://japorongao.github.io/se_project_spots)
+
 **Figma**  
   
 * [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
