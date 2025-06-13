@@ -1,13 +1,13 @@
 # Project 3: Spots
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Figma
+- Images
+
 **Intro**
-This project comprises of numerous elements that correctly displays on desktop and mobile screen sizes.  It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates.  It also allows users to interact with the site via interactive buttons.  It was created utilizing numerical values acquired from Figma templates.
+This project comprises of numerous elements that correctly displays on desktop and mobile screen sizes. It implements different css techniques such as @media screens, flex containers, grid displays, and grid-templates. It also allows users to interact with the site via interactive buttons. It was created utilizing numerical values acquired from Figma templates.
 
 **Tech Stack**
 
@@ -17,14 +17,19 @@ This project comprises of numerous elements that correctly displays on desktop a
 - Interactive Buttons
 
   **Deployment**
+
   - [Deployment Link](https://japorongao.github.io/se_project_spots)
 
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
+**Project Video**
+
+<div style="position: relative; padding-bottom: 53.125%; height: 0;"><iframe src="https://www.loom.com/embed/d3d9e25158f54aa0b57afc37f7c2554f?sid=7dcae37d-24ba-4d8b-9570-e9bca62fde9d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+**Figma**
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+**Images**
+
 ![Avatar (1)](https://github.com/user-attachments/assets/9e14b0d9-e8bd-4539-9d7b-293b97438c15)
 ![outdoorcafe png (1)](https://github.com/user-attachments/assets/6f8b9bcd-2dd0-416b-88f9-813e47bcd021)
 ![bridge png (1)](https://github.com/user-attachments/assets/3d5286a9-a954-4e27-a634-af5e6a049a5f)
