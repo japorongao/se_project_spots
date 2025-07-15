@@ -1,5 +1,3 @@
-/* TODO - responsive design */
-
 .modal {
   visibility: hidden;
   background-color: #00000080;
@@ -70,8 +68,6 @@
   line-height: 100%;
   size: 20px;
   font-style: medium;
-
-  /*TODO - border, padding*/
 }
 
 .modal__input::placeholder {
@@ -95,5 +91,4 @@
   font-size: medium;
   color: #fff;
   border-radius: 8px;
-  /* TODO - remove max-width from media query */
 }
