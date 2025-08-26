@@ -14,6 +14,7 @@
 
 .modal_is-opened {
   visibility: visible;
+  display: none;
 }
 
 .modal__container {
