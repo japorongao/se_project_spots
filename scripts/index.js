@@ -1,10 +1,10 @@
-const editProfileBtn = document.querySelector(".profile_edit-btn");
+const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProileCloseBtn = editProfileModal.querySelector(".modal_close-btn");
+const editProileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 
-const newPostBtn = document.querySelector(".profile_new-post-btn");
+const newPostBtn = document.querySelector(".profile__new-post-btn");
 const newPostModal = document.querySelector("#new-post-modal");
-const newPostCloseBtn = newPostModal.querySelector(".modal_close-btn");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileModal.classList.add("modal_is-opened");
