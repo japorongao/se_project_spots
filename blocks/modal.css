@@ -10,10 +10,13 @@
   justify-content: center;
   align-items: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -33,8 +36,13 @@
   width: 40px;
   height: 40px;
   opacity: 40%;
-  border: 1px;
+  border: 1px solid #000;
   background-color: #fff;
+  cursor: pointer;
+}
+
+.modal__close-btn:hover {
+  opacity: 1;
 }
 
 .modal__title {
@@ -64,10 +72,11 @@
   font-size: 20px;
   padding: 1px 50px;
   gap: 10px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   line-height: 100%;
-  size: 20px;
-  font-style: medium;
+  font-size: 20px;
+  font-style: normal;
+  box-sizing: border-box;
 }
 
 .modal__input::placeholder {
@@ -78,7 +87,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   padding: 16px 363px 16px 12px;
 }
 
@@ -91,4 +100,5 @@
   font-size: medium;
   color: #fff;
   border-radius: 8px;
+  cursor: pointer;
 }
