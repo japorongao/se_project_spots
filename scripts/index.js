@@ -56,7 +56,7 @@ function handleNewPostSubmit(evt) {
   evt.preventDefault();
   nameInput.value = newPostModal.textContent;
   linkInput.value = newPostModal.textContent;
-  newPostModal.classList.add("modal_is-opened");
+  newPostModal.classList.remove("modal_is-opened");
   console.log("submitting");
 }
 
