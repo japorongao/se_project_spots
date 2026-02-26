@@ -65,11 +65,11 @@ function getCardElement(data) {
 }
 
 function openModal(modal) {
-  modal.classlist.add("modal_is-opened");
+  modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
-  modal.classlist.remove("modal_is-opened");
+  modal.classList.remove("modal_is-opened");
 }
 
 editProfileBtn.addEventListener("click", function () {
