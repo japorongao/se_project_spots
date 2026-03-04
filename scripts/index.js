@@ -51,6 +51,11 @@ const addCardFormElement = newPostModal.querySelector("#new-post-modal");
 const linkInput = newPostModal.querySelector("#card-image-input");
 const captionInput = newPostModal.querySelector("#card-caption-input");
 
+const previewModal = document.querySelector("#preview-modal");
+const previewModalCloseBtn = previewModal.querySelector(".modal__close");
+const previewImageEl = previewModal.querySelector(".modal__image");
+// TODO - select name element
+
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card");
@@ -75,6 +80,14 @@ function getCardElement(data) {
     cardElement.remove();
   });
 
+  cardImageEl.addEventListener("click", function () => {
+    previewImageEl.src = data.link;
+    previewImageEl.alt = data.name;
+    previewTitleEl.textContent = data.name;
+
+    openModal(previewModal);
+  });
+
   return cardElement;
 }
 
@@ -95,6 +108,8 @@ editProfileBtn.addEventListener("click", function () {
 editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
+
+// TODO -  set click listener
 
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
