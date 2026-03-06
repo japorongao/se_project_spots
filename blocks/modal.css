@@ -55,17 +55,20 @@
 }
 
 .modal__close-btn_type_preview {
-  /*TO DO - Set up correct background image*/
+  background: none;
   position: absolute;
   top: 0;
   right: -57.5px;
+  border: none;
+}
+
+.modal__close-btn_type_preview:hover {
+  opacity: 40%;
 }
 
 .modal__close-btn:hover {
   opacity: 1;
 }
-
-/* TODO Set up preview close button hover state*/
 
 .modal__title {
   margin: 0 0 32px;
@@ -132,8 +135,14 @@
 }
 
 .modal__caption {
-  /* Style Correctly */
+  background-color: rgba(33, 33, 33, 1);
   color: white;
+  width: 214px;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 480px) {

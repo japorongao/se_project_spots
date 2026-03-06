@@ -54,7 +54,7 @@ const captionInput = newPostModal.querySelector("#card-caption-input");
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close");
 const previewImageEl = previewModal.querySelector(".modal__image");
-// TODO - select name element
+const previewCaptionEl = getCardElement.querySelector(".preview_caption")
 
 const cardTemplate = document
   .querySelector("#card-template")
