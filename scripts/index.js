@@ -109,7 +109,15 @@ editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
-// TODO -  set click listener
+getCardElement.addEventListener("click", function() {
+  getCardElementInput.value = cardElementEl.textContent;
+  getCardElementDescriptionInput = getCardElementDescriptionEl.textContent;
+  openModal(getCardElement);
+});
+
+getCardElement.addEventListener("click" fucntion (){
+  closeModal(getCardElement);
+});
 
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
