@@ -109,13 +109,13 @@ editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
-getCardElement.addEventListener("click", function() {
+getCardElement.addEventListener("click", function () {
   getCardElementInput.value = cardElementEl.textContent;
   getCardElementDescriptionInput = getCardElementDescriptionEl.textContent;
   openModal(getCardElement);
 });
 
-getCardElement.addEventListener("click" fucntion (){
+getCardElement.addEventListener("click" function () {
   closeModal(getCardElement);
 });
 
