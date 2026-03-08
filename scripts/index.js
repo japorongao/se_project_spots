@@ -80,7 +80,7 @@ function getCardElement(data) {
     cardElement.remove();
   });
 
-  cardImageEl.addEventListener("click", function () => {
+  cardImageEl.addEventListener("click", function () {
     previewImageEl.src = data.link;
     previewImageEl.alt = data.name;
     previewTitleEl.textContent = data.name;
