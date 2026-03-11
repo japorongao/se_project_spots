@@ -66,6 +66,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -74,7 +75,8 @@
                 id="profile-description-input"
                 type="text"
                 class="modal__input"
-                placeholder="Describe yourself"
+                placeholder="Type your description"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">SAVE</button>
@@ -95,6 +97,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Place a link to the picture"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
@@ -104,6 +107,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">SAVE</button>
@@ -112,21 +116,17 @@
       </div>
     </div>
 
-    <div class="modal modal_type_preview modal_is-opened" id="preview-modal">
+    <div class="modal modal_type_preview" id="preview-modal">
       <div class="modal__image-container">
         <button
           type="button"
           aria-label="Close modal"
-          class="modal__close-btn_type_preview"
+          class="modal__close-btn_type_preview modal__close-btn"
         >
-          <img src="./images/PreviewCloseIcon.svg" alt="x-icon" />
+          <img src="" alt="" />
         </button>
-        <img
-          src=" https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
-          alt=""
-          class="modal__image"
-        />
-        <p class="modal__caption">Golden Gate Bridge</p>
+        <img src="" alt="" class="modal__image" />
+        <p class="modal__caption"></p>
       </div>
     </div>
 

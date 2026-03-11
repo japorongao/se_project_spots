@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Golden Gate Bridge",
-    link: " https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
   },
   {
     name: "Val Thorens",
@@ -52,9 +52,12 @@ const linkInput = newPostModal.querySelector("#card-image-input");
 const captionInput = newPostModal.querySelector("#card-caption-input");
 
 const previewModal = document.querySelector("#preview-modal");
-const previewModalCloseBtn = previewModal.querySelector(".modal__close");
+const previewModalCloseBtn = previewModal.querySelector(
+  ".modal__close-btn_type_preview.modal__close-btn",
+);
+previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
 const previewImageEl = previewModal.querySelector(".modal__image");
-const previewCaptionEl = getCardElement.querySelector(".preview_caption");
+const previewCaptionEl = previewModal.querySelector(".modal__caption");
 
 const cardTemplate = document
   .querySelector("#card-template")
@@ -72,7 +75,7 @@ function getCardElement(data) {
 
   const cardLikeBtnEl = cardElement.querySelector(".card__like-btn");
   cardLikeBtnEl.addEventListener("click", () => {
-    cardLikeBtnEl.classList.toggle(".card__like-btn_active");
+    cardLikeBtnEl.classList.toggle("card__like-btn_active");
   });
 
   const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
@@ -83,7 +86,7 @@ function getCardElement(data) {
   cardImageEl.addEventListener("click", function () {
     previewImageEl.src = data.link;
     previewImageEl.alt = data.name;
-    previewTitleEl.textContent = data.name;
+    previewCaptionEl.textContent = data.name;
 
     openModal(previewModal);
   });
@@ -109,10 +112,8 @@ editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
-getCardElement.addEventListener("click", function () {
-  getCardElementInput.value = cardElementEl.textContent;
-  getCardElementDescriptionInput = getCardElementDescriptionEl.textContent;
-  openModal(getCardElement);
+editProfileBtn.addEventListener("click", function () {
+  openModal(editProfileModal);
 });
 
 getCardElement.addEventListener("click", function () {
@@ -148,8 +149,8 @@ function handleNewPostSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
+  evt.target.reset();
   closeModal(newPostModal);
-  console.log("submitting");
 }
 
 newPostModal.addEventListener("submit", handleNewPostSubmit);

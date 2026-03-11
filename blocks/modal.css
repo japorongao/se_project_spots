@@ -42,15 +42,16 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  opacity: 40%;
+  opacity: 0.4;
   border: none;
   background-color: #fff;
-  background-image: url(../images/CloseIcon.svg) center no-repeat;
+  background-image: url(../images/CloseIcon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 35px 35px;
   cursor: pointer;
   padding: 0;
   margin: 0;
-  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -138,7 +139,6 @@
   background-color: rgba(33, 33, 33, 1);
   color: white;
   width: 214px;
-  height: 32px;
   font-size: 20px;
   border-radius: 8px;
   display: grid;
