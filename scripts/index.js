@@ -53,7 +53,7 @@ const captionInput = newPostModal.querySelector("#card-caption-input");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
-  ".modal__close-btn_type_preview.modal__close-btn",
+  ".modal__close-btn_type_preview",
 );
 previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
 const previewImageEl = previewModal.querySelector(".modal__image");
@@ -114,10 +114,6 @@ editProfileCloseBtn.addEventListener("click", function () {
 
 editProfileBtn.addEventListener("click", function () {
   openModal(editProfileModal);
-});
-
-getCardElement.addEventListener("click", function () {
-  closeModal(getCardElement);
 });
 
 newPostBtn.addEventListener("click", function () {
