@@ -121,6 +121,7 @@
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
+  border: none;
 }
 
 .modal__image-container {

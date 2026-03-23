@@ -22,5 +22,8 @@
     max-width: 248px;
     align-items: center;
     padding: 20px;
+    .cards__list {
+      grid-template-columns: repeat(auto-fit, 413px);
+    }
   }
 }
