@@ -85,6 +85,7 @@
 .modal__label {
   margin: 0 0 32px;
   font-size: 16px;
+  display: block;
 }
 
 .modal__input {
@@ -110,6 +111,13 @@
   letter-spacing: 0%;
   font-weight: 500;
   font-style: normal;
+}
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  /* TODO - use correct color and font sizes */
+  color: red;
 }
 
 .modal__submit-btn {
