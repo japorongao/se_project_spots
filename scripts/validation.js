@@ -3,11 +3,22 @@ const showInputError(formEl, inputEl, errorMsg) => {
   const errorMsgEl = document.querySelector("#" + errorMsgID);
   errorMsgEl.textContent = errorMsg;
   console.log(errorMsgID);
+  inputEl.classList.add("modal__input_type_error");
+};
+
+const hideInputError(formEl, inputEl) => {
+  const errorMsgID = inputEl.id + ".error";
+  const errorMsgEl = document.querySelector("#" + errorMsgID);
+  errorMsgEl.textContent = "";
+  console.log(errorMsgID);
+  inputEl.classList.remove("modal__input_type_error");
 };
 
 const checkInputValidity = (formEl, inputEl) => {
   if (!inputEl.validity.valid)
     showInputError(formEl, inputEl, inputEl.validationMessage);
+} else {
+  hideInputError(formEl, inputEl);
 };
 
 // TODO - Implement the same to the other error messages.

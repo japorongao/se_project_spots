@@ -104,6 +104,10 @@
   box-sizing: border-box;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input::placeholder {
   color: #2121214d;
   font-size: 20px;
@@ -111,6 +115,14 @@
   letter-spacing: 0%;
   font-weight: 500;
   font-style: normal;
+}
+
+.modal__input:hover {
+  border: 1px solid rgba(33, 33, 33);
+}
+
+.modal__input_type_error:hover {
+  border: 1px solid rgba(255, 0, 0, 0.6);
 }
 
 .modal__error {
