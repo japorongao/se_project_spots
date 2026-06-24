@@ -21,6 +21,23 @@ const checkInputValidity = (formEl, inputEl) => {
   hideInputError(formEl, inputEl);
 };
 
+const hasInvalidInput = (inputList) => {
+return inputList.some((input) => {
+  return !input.validity.valid;
+})
+};
+
+const toggleButtonState = (inputList, buttonEl) {
+  if (hasInvalidInput(inputList)) {
+    buttonEl.disabled = true;
+    // add a modifier class to the buttonEl to make it gray
+    // dont forget CSS
+} else {
+  buttonEl.disabled = false;
+  // remove the disabled class
+}
+};
+
 // TODO - Implement the same to the other error messages.
 
 const setEventListeners = (formEl) => {
@@ -33,7 +50,7 @@ const setEventListeners = (formEl) => {
   inputList.forEach((inputEl) => {
     inputEl.addEventListener("input", function () {
       checkInputValidity(formEl, inputEl);
-      // toggleButtonState(inputList, buttonElement);
+      toggleButtonState(inputList, buttonElement);
     });
   });
 };
