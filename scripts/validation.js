@@ -29,13 +29,23 @@ return inputList.some((input) => {
 
 const toggleButtonState = (inputList, buttonEl) {
   if (hasInvalidInput(inputList)) {
-    buttonEl.disabled = true;
-    // add a modifier class to the buttonEl to make it gray
-    // dont forget CSS
+disableButton(buttonEl);
 } else {
   buttonEl.disabled = false;
   // remove the disabled class
 }
+};
+
+const disableButton = (buttonEl) => {
+   buttonEl.disabled = true;
+    // add a modifier class to the buttonEl to make it gray
+    // dont forget CSS
+};
+
+const resetValidation = (formEl, inputList) => {
+ inputList.forEach((input) => {
+  hideInputError(formEl, input);
+ })
 };
 
 // TODO - Implement the same to the other error messages.
@@ -45,7 +55,7 @@ const setEventListeners = (formEl) => {
   const buttonEl = formEl.querySelector(".modal__button");
 
   // TODO - Handle initial states
-  // toggleButtonState(inputList, buttonElement);
+  toggleButtonState(inputList, buttonElement);
 
   inputList.forEach((inputEl) => {
     inputEl.addEventListener("input", function () {
