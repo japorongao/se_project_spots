@@ -1,3 +1,12 @@
+const settings = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtomSelector: ".modal__button",
+  inactiveButtonClass: "modal__button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
+};
+
 const showInputError(formEl, inputEl, errorMsg) => {
   const errorMsgID = inputEl.id + ".error";
   const errorMsgEl = document.querySelector("#" + errorMsgID);
@@ -36,7 +45,7 @@ disableButton(buttonEl);
 }
 };
 
-const disableButton = (buttonEl) => {
+const disableButton = (buttonEl, config) => {
    buttonEl.disabled = true;
     // add a modifier class to the buttonEl to make it gray
     // dont forget CSS
@@ -49,9 +58,10 @@ const resetValidation = (formEl, inputList) => {
 };
 
 // TODO - Implement the same to the other error messages.
+// TODO - Use the settings object in all functions instead of hard-coded strings.
 
-const setEventListeners = (formEl) => {
-  const inputList = Array.from(formEl.querySelectorAll(".modal__input"));
+const setEventListeners = (formEl, config) => {
+  const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonEl = formEl.querySelector(".modal__button");
 
   // TODO - Handle initial states
@@ -59,17 +69,19 @@ const setEventListeners = (formEl) => {
 
   inputList.forEach((inputEl) => {
     inputEl.addEventListener("input", function () {
-      checkInputValidity(formEl, inputEl);
-      toggleButtonState(inputList, buttonElement);
+      checkInputValidity(formEl, inputEl, config);
+      toggleButtonState(inputList, buttonElement, config);
     });
   });
 };
 
-const enableValidation = () => {
-  const formList = document.querySelectorAll(".modal__form");
+const enableValidation = (config) => {
+  const formList = document.querySelectorAll("config.formSelector");
   formList.forEach((formEl) => {
-    setEventListeners(formEl);
+    setEventListeners(formEl, config);
   });
 };
 
-enableValidation();
+
+
+enableValidation(settings);
